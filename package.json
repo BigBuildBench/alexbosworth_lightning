@@ -1,0 +1,39 @@
+{
+  "author": {
+    "name": "Alex Bosworth",
+    "url": "https://twitter.com/alexbosworth"
+  },
+  "bugs": {
+    "url": "https://github.com/alexbosworth/lightning/issues"
+  },
+  "description": "Lightning Network client library",
+  "devDependencies": {
+    "tsd": "0.31.2",
+    "typescript": "5.6.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "grpc",
+    "lightning-network",
+    "lnd"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "lightning",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexbosworth/lightning.git"
+  },
+  "scripts": {
+    "test": "npx nyc@17.0.0 node --experimental-test-coverage --test && npm run test:types",
+    "test:types": "tsd",
+    "unit-tests": "node --test && npm run test:types"
+  },
+  "tsd": {
+    "directory": "test/typescript"
+  },
+  "types": "index.d.ts",
+  "version": "10.22.2"
+}
